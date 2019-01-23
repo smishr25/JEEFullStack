@@ -41,7 +41,10 @@ public class ArrayMedian {
 		} else {
 			median = c[len / 2];
 		}
-		System.out.println("The element at index " + median + " is: " + c[median]);
+		/*System.out.println(median + "*");
+		for (i = 0; i < len; i++)
+			System.out.print(c[i] + " ");*/
+		System.out.println("The element at index " + median + " is: " + c[median-1]);
 
 	}
 }
