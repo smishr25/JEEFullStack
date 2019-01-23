@@ -24,7 +24,7 @@ public class FirstNonRepeating {
 							//System.out.println(sb.charAt(j) + " * " + sb.charAt(k));
 							flag = 1;
 							sb = sb.replace(sb.charAt(k), '-');
-							//System.out.println(sb);
+							
 						}
 					}
 					if (flag == 0) {
