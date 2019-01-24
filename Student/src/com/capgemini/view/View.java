@@ -57,12 +57,12 @@ public class View {
 		System.out.println("Enter roll number: ");
 		int rollNumber = sc.nextInt();
 
-		temp=studSch.checkRoll(rollNumber);
-		while(!temp) {
+		temp = studSch.checkRoll(rollNumber);
+		while (!temp) {
 			System.out.println("Roll No. exist! ");
 			System.out.println("Enter different roll number: ");
 			rollNumber = sc.nextInt();
-			temp=studSch.checkRoll(rollNumber);
+			temp = studSch.checkRoll(rollNumber);
 		}
 
 		System.out.println("Enter name: ");
@@ -84,17 +84,20 @@ public class View {
 	}
 
 	private static void showAllStudents() {
-		studSch.showAllStudents();
-		// addCourse.showCourses();
+		String res;
+		res=studSch.showAllStudents();
+		System.out.println(res);
 
 	}
 
 	private static void showStudentByRoll() {
 		int rollNo;
+		String res;
 		System.out.println("Enter the Roll No.: ");
 		rollNo = sc.nextInt();
-		studSch.showStudentByRoll(rollNo);
-		// addCourse.showCourses();
+		res=studSch.showStudentByRoll(rollNo);
+		System.out.println(res);
+
 
 	}
 

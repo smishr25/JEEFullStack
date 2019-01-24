@@ -19,52 +19,61 @@ public class StudentSchedular {
 	}
 
 	public boolean checkRoll(int rollNumber) {
-		// cNum = courses.length;
-		int c=0;
+		int c = 0;
 		for (int i = 0; i < counterStudent; i++) {
 			if (students[i].getRollNumber() == rollNumber) {
-				c=0;
+				c = 0;
 				return false;
-			}
-			else {
-				c=1;
+			} else {
+				c = 1;
 			}
 		}
-		if(c==1) {
+		if (c == 1) {
 			return true;
 		}
-		return(true);
+		return (true);
 
 	}
 
-	public void showAllStudents() {
+	public String showAllStudents() {
+		String result = "";
 		for (int i = 0; i < counterStudent; i++) {
-			System.out.println("Roll Number: " + students[i].getRollNumber());
-			System.out.println("Name: " + students[i].getName());
-			System.out.println("Courses: ");
+			result += "Roll Number: " + students[i].getRollNumber() + "\n";
+			result += "Name: " + students[i].getName() + "\n";
+			result += "Courses: ";
 			cTemp = students[i].getCourses();
 			for (int j = 0; j < cTemp.length; j++) {
-				System.out.println(cTemp[j].getCourseName());
+				System.out.println();
+				result += cTemp[j].getCourseName() + " ";
 			}
+			result += "\n";
 		}
+		return result;
 
 	}
 
-	public void showStudentByRoll(int rollNo) {
+	public String showStudentByRoll(int rollNo) {
+		String result = "";
+		int c = 0;
 		for (int i = 0; i < counterStudent; i++) {
 			if (students[i].getRollNumber() == rollNo) {
-				System.out.println("Roll Number: " + students[i].getRollNumber());
-				System.out.println("Name: " + students[i].getName());
-				System.out.println("Courses: ");
+				result += "Roll Number: " + students[i].getRollNumber() + "\n";
+				result += "Name: " + students[i].getName() + "\n";
+				result += "Courses: ";
 				cTemp = students[i].getCourses();
 				for (int j = 0; j < cTemp.length; j++) {
-					System.out.println(cTemp[j].getCourseName());
+					System.out.println();
+					result += cTemp[j].getCourseName() + " ";
 				}
+				result += "\n";
 			} else {
-				System.out.println("Student not found with Roll No. " + rollNo);
+				c++;
+				if (c == counterStudent)
+					return ("Student not found with Roll No. " + rollNo);
 			}
 
 		}
+		return result;
 
 	}
 }
