@@ -3,7 +3,8 @@ public class Lab2_1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String fname,lname,gen;
+		String fname,lname;
+		char gen;
 		int age;
 		double weight;
 		Scanner s=new Scanner(System.in);
@@ -12,7 +13,7 @@ public class Lab2_1 {
 		System.out.println("Enter Last Name: ");
 		lname=s.nextLine();
 		System.out.println("Enter Gender (M/F): ");
-		gen=s.nextLine();
+		gen=s.next().charAt(0);
 		System.out.println("Enter Age: ");
 		age=s.nextInt();
 		System.out.println("Enter Weight: ");
