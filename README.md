@@ -1,4 +1,5 @@
 # JEEFullStack
 
 ## Internship at Capgemini.<br>
-### Instructor: SanjayDegaonkar
+
+### Instructor: <a href="https://github.com/sanjaydegaonkar"> Sanjay Degaonkar</a> <br>
