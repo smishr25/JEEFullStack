@@ -1,7 +1,5 @@
 package Person;
 
-import java.math.BigInteger;
-
 public class Lab2_4_Person {
 	String firstName;
 	String lastName;
