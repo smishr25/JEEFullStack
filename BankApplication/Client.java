@@ -10,8 +10,8 @@ public class Client {
 			System.out.println(bank.createAccount(101, 5000)); //Passing Transaction details using object;
 			System.out.println(bank.createAccount(102, 3000));
 			System.out.println(bank.withdrawAmount(101, 2000)); //Passing withdrawal details using object;
-			System.out.println(bank.DepositAmount(101, 2000)); //Passing withdrawal details using object;
-			System.out.println(bank.FundTranser(101,102, 1000)); //Passing withdrawal details using object;
+			System.out.println(bank.DepositAmount(101, 2000)); //Passing Deposit details using object;
+			System.out.println(bank.FundTranser(101,102, 1000)); 
 
 		}catch(InsufficientOpeningBalanceException io) // catch the exception if accountNumber invalid;
 		{
