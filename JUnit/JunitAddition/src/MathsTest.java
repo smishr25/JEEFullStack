@@ -9,8 +9,5 @@ class MathsTest {
 	public void TestAddition() {
 		assertEquals(8, m.addition(4,4));
 	}
-	void test() {
-		fail("Not yet implemented");
-	}
-
+	
 }
